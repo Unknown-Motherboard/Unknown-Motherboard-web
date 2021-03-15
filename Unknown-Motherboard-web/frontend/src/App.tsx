@@ -6,6 +6,8 @@ import Product from './Products/Products';
 import Home from './Home/Home';
 import Orders from './orders/Orders'
 import OrderDetail from './orders/OrderDetails';
+import Payment from './Payment/Payment';
+import CheckoutSteps from './Payment/CheckoutSteps';
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
                             <Link to="/">Home</Link>
                             <Link to="/catalog">Catalog</Link>
                             <Link to="/orders/">Orders</Link>
+                            <Link to="/Payment/">Payment</Link>
                         </div>
                     </header>
                     <aside className="sidebar">
@@ -60,6 +63,12 @@ function App() {
                             </Route>
                             <Route path="/order/:id">
                                 <OrderDetail />
+                            </Route>
+                            <Route path="/Payment">
+                                <Payment />
+                            </Route>
+                            <Route path="/Payment">
+                                <CheckoutSteps />
                             </Route>
                         </switch>
                     </main>
