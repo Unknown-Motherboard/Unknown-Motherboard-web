@@ -188,3 +188,18 @@ input {
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
 }
+
+.fulfillment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ftable {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+tbody > tr.false {
+  background-color: red;
+}
